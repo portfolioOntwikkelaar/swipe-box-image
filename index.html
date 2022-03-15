@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <h1 class="zero">Elixir of life</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+      <div class="swiper-slide slide2">
+        <h1 class="zero1">Missed message</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+      <div class="swiper-slide slide3">
+        <h1 class="zero2">Behind the clouds</h1>
+        <p class="clr">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+      <div class="swiper-button-next swiper-button-white"></div> 
+      <div class="swiper-button-prev swiper-button-white"></div> 
+  </div>
+
+  
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    })
+  </script>
+</body>
+</html>
